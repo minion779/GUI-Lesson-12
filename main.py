@@ -31,16 +31,16 @@ def delItem():
         listbox.delete(index)
 
 # design
-fOpen = Button(root, text = "Open", command = None)
+fOpen = Button(root, text = "Open", command = openFile)
 fOpen.pack(side = LEFT, padx = 5, pady = 5)
 
-lDelete = Button(root, text = "Delete", command = None)
+lDelete = Button(root, text = "Delete", command = delItem)
 lDelete.pack(padx = 5, pady = 5)
 
-fSave = Button(root, text = "Save", command = None)
+fSave = Button(root, text = "Save", command = saveFile)
 fSave.pack(side = RIGHT, padx = 5, pady = 5)
 
-lAdd = Button(root, text = "Add", command = None)
+lAdd = Button(root, text = "Add", command = addItem)
 lAdd.pack(side = RIGHT, padx = 5, pady = 5)
 
 item = Entry(root, width = 30)
